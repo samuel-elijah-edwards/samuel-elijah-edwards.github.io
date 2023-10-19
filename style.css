@@ -47,11 +47,65 @@ header {
   padding: 20px;
   font-size: large;
 
+  position: relative;
+}
+
+
+.bio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.bio-image {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.bio-image img{
+border-radius: 50%;
+}
+
+.bio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  border-radius: 50%;
+}
+
+.bio-image:hover .image-overlay {
+  opacity: 0.8;
+}
+
+.bio-overlay p {
+  color: white;
+  font-size: 18px;
+}
+
+.bio-image:hover .bio-overlay {
+  opacity: 0.8;
+
 }
 
 
 
-.pic {
+
+/* .pic {
   border-radius: 50%;
   border: 5px solid var(--primary-color);
   box-shadow: 1px 1px 10px 6px var(--primary-shadow);
@@ -62,9 +116,13 @@ header {
   position: relative;
   display: inline-block;
   text-align: center;
-}
 
-.image-overlay {
+} */
+
+
+
+/* .image-overlay {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -87,7 +145,9 @@ header {
 .image-overlay p {
   color: white;
   font-size: 18px;
-}
+
+} */
+
 
 footer {
   background-color: var(--primary-color);
@@ -104,12 +164,20 @@ nav a {
 
 
 nav ul {
-  list-style-type: none;
-}
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
 
 nav ul li {
   display: inline;
   margin-right: 20px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 
 section {
