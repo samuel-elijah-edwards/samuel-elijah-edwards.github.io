@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Samuel Elijah Edwards - Personal Website</title>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+  <script type='text/javascript'>
+    jQuery(document).ready(function ($) {
+
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Samuel Elijah Edwards</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="[Samuel Edwards] Resume FA23.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+
+  <div class="bio-container">
+    <div class="bio-image">
+      <a href=#contact>
+      <img alt="Headshot" src="Headshot profile pic.png" width="250">
+      <div class="bio-overlay">
+        <p>Let's Connect!</p>
+      </div>
+      </a>
+    </div> 
+    <div class="bio">
+      <h2>About Me</h2>
+      <p>I am a dedicated Data Science enthusiast currently pursuing a
+        Bachelor of Arts in Data Science with an emphasis on Human Behavior and Psychology at the University of
+        California, Berkeley.
+        My academic journey has provided me with a strong foundation in data analysis, statistical modeling,
+        and programming languages, such as Python and R. I am passionate about the potential of data to drive meaningful
+        insights and solve complex problems.
+        With hands-on project experience in data analysis and machine learning, and a background in STEM tutoring and
+        leadership, I am not only equipped with technical skills
+        but also strong interpersonal and project management abilities. I am excited to continue my journey in the field
+        of data science, contributing to innovative solutions, and making a positive impact in the industry.</p>
+    </div>
+  </div>
+
+
+  <!-- <div class="image" style="text-align: left;">
+    <div class="image-container">
+      <a href=#contact>
+        <img class="pic" alt="My Image" src="Headshot profile pic.png" width="250">
+        <div class="image-overlay">
+          <p>Let's Connect!</p>
+        </div>
+      
+      </a>
+    </div>
+  </div> -->
+
+  <!-- <section id="about">
+    <h2>About Me</h2>
+    <p>I am a dedicated Data Science enthusiast currently pursuing a
+      Bachelor of Arts in Data Science with an emphasis on Human Behavior and Psychology at the University of
+      California, Berkeley.
+      My academic journey has provided me with a strong foundation in data analysis, statistical modeling,
+      and programming languages, such as Python and R. I am passionate about the potential of data to drive meaningful
+      insights and solve complex problems.
+      With hands-on project experience in data analysis and machine learning, and a background in STEM tutoring and
+      leadership, I am not only equipped with technical skills
+      but also strong interpersonal and project management abilities. I am excited to continue my journey in the field
+      of data science, contributing to innovative solutions, and making a positive impact in the industry.</p>
+  </section> -->
+
+  <!-- This is where I will put the projects -->
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p> These projects are representative of my own personal interests
+      and have allowed me to exercise the concepts I have learned throughout
+      my educational journey. Feel free to take a look!
+    </p>
+
+    <!-- Digit Processor -->
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <a class="underline"
+          href="https://github.com/samuel-elijah-edwards/machine-learning-projects/blob/main/digit-recognizer.ipynb">
+          <img src="digit_recognition_pic.png" alt="digit-recognition" loading="lazy" class="project-pic" />
+          <h3 class="project-title">Digit Recognizer</h3>
+        </a>
+        <p class="project-details">
+          In this project, I used a Neural Network to analyze handwritten numbers and
+          and predict what number is being displayed. The dataset came from a Kaggle
+          competition I participated in. I have a strong interest in computer vision,
+          and this project acted as an introduction to that field for myself!
+        </p>
+      </div>
+
+      <!-- Exo Planets -->
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <a class="underline"
+            href="https://github.com/samuel-elijah-edwards/machine-learning-projects/blob/main/Exo-planetML.ipynb">
+            <img src="exoplanet_pic.webp" alt="exo-planet" loading="lazy" class="project-pic" />
+            <h3 class="project-title">Exo-planet Classification</h3>
+          </a>
+          <p class="project-details">
+            In this project, I used a Neural Network to analyze handwritten numbers and
+            and predict what number is being displayed. The dataset came from a Kaggle
+            competition I participated in. I have a strong interest in computer vision,
+            and this project acted as an introduction to that field for myself!
+          </p>
+        </div>
+
+  </section>
+
+  
+  <!-- AJAX IMPLEMENTATION -->
+  <section class="contact" id="contact">
+    <h2>Get In Touch With Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form id="my-form" action="https://formspree.io/f/xvojddar" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
+              required />
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+              required />
+          </div>
+
+
+
+
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+              class="input-field" required></textarea>
+          </div>
+
+      </div>
+      <button id="my-form-button" type="submit" value="Submit" class="submit-btn">Submit</button>
+
+      <p id="my-form-status"></p>
+      </form>
+    </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>My Socials</p>
+
+    <section class="flex-container">
+      <a class="linkedin" href="https://www.linkedin.com/in/samuel-elijah-edwards/" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+
+      <a class="mail" href="mailto: s_edwards@berkeley.edu" target="_blank">
+        <ion-icon name="mail"></ion-icon>
+      </a>
+
+      <a class="github" href="https://github.com/samuel-elijah-edwards" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+    </section>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+<script>
+  var form = document.getElementById("my-form");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
+
+
+</html>
