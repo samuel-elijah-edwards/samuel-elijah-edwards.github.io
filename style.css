@@ -87,7 +87,7 @@ border-radius: 50%;
   border-radius: 50%;
 }
 
-.bio-image:hover .image-overlay {
+.bio-image:hover .bio-overlay {
   opacity: 0.8;
 }
 
