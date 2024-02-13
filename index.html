@@ -1,220 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/icons8-sigma-16.png" />
+    <title>Samuel Elijah Edwards - Personal Website</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Samuel Elijah Edwards - Personal Website</title>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"
+    ></script>
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
-  <script type='text/javascript'>
-    jQuery(document).ready(function ($) {
-
-      $(".scroll").click(function (event) {
-        event.preventDefault();
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top },
+            1200
+          );
+        });
       });
-    });
-  </script>
+    </script>
+  </head>
 
-</head>
+  <body>
+    <header>
+      <h1>Samuel Elijah Edwards</h1>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a href="assets/Samuel Edwards Resume SP24.pdf" target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <h1>Samuel Elijah Edwards</h1>
-    <nav>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="Samuel Edwards Resume FA23.pdf" target="_blank">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
+    <br />
 
-  <br>
-
-  <div class="bio-container">
-    <div class="bio-image">
-      <a href=#contact>
-      <img alt="Headshot" src="Headshot profile pic.png" width="250">
-      <div class="bio-overlay">
-        <p>Let's Connect!</p>
+    <div class="bio-container">
+      <div class="bio-image">
+        <a href="#contact">
+          <img
+            alt="Headshot"
+            src="assets/Headshot profile pic.png"
+            width="250"
+          />
+          <div class="bio-overlay">
+            <p>Let's Connect!</p>
+          </div>
+        </a>
       </div>
-      </a>
-    </div> 
-    <div class="bio">
-      <h2>About Me</h2>
-      <p>I am a dedicated Data Science enthusiast currently pursuing a
-        Bachelor of Arts in Data Science with an emphasis on Human Behavior and Psychology at the University of
-        California, Berkeley.
-        My academic journey has provided me with a strong foundation in data analysis, statistical modeling,
-        and programming languages, such as Python and R. I am passionate about the potential of data to drive meaningful
-        insights and solve complex problems.
-        With hands-on project experience in data analysis and machine learning, and a background in STEM tutoring and
-        leadership, I am not only equipped with technical skills
-        but also strong interpersonal and project management abilities. I am excited to continue my journey in the field
-        of data science, contributing to innovative solutions, and making a positive impact in the industry.</p>
+      <div class="bio">
+        <h2>About Me</h2>
+        <p>
+          I am a dedicated Data Science enthusiast currently pursuing a Bachelor
+          of Arts in Data Science with an emphasis on Human Behavior and
+          Psychology at the University of California, Berkeley. My academic
+          journey has provided me with a strong foundation in data analysis,
+          statistical modeling, and programming languages, such as Python and R.
+          I am passionate about the potential of data to drive meaningful
+          insights and solve complex problems. With hands-on project experience
+          in data analysis and machine learning, and a background in STEM
+          tutoring and leadership, I am not only equipped with technical skills
+          but also strong interpersonal and project management abilities. I am
+          excited to continue my journey in the field of data science,
+          contributing to innovative solutions, and making a positive impact in
+          the industry.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!-- This is where I will put the projects -->
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>
+        These projects are representative of my own personal interests and have
+        allowed me to exercise the concepts I have learned throughout my
+        educational journey. Feel free to take a look!
+      </p>
 
+      <!-- Digit Processor -->
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p> These projects are representative of my own personal interests
-      and have allowed me to exercise the concepts I have learned throughout
-      my educational journey. Feel free to take a look!
-    </p>
-
-    <!-- Digit Processor -->
-    <div class="projects-container">
       <div class="project-container project-card">
-        <a class="underline"
-          href="https://github.com/samuel-elijah-edwards/machine-learning-projects/blob/main/digit-recognizer.ipynb" target="_blank">
-          <img src="digit_recognition_pic.png" alt="digit-recognition" loading="lazy" class="project-pic" />
+        <a
+          class="underline"
+          href="https://github.com/samuel-elijah-edwards/machine-learning-projects/blob/main/digit-recognizer.ipynb"
+          target="_blank"
+        >
+          <img
+            src="assets/digit_recognition_pic.png"
+            alt="digit-recognition"
+            loading="lazy"
+            class="project-pic"
+          />
           <h3 class="project-title">Digit Recognizer</h3>
         </a>
         <p class="project-details">
-          In this project, I used a Neural Network to analyze handwritten numbers and
-          and predict what number is being displayed. The dataset came from a Kaggle
-          competition I participated in. I have a strong interest in computer vision,
-          and this project acted as an introduction to that field for myself!
+          Implemented a Neural Network to scrutinize handwritten numbers,
+          predicting displayed digits based on a dataset from a Kaggle
+          competition. This venture served as my introductory exploration into
+          computer vision, fueled by a keen interest in the field.
         </p>
       </div>
 
       <!-- Exo Planets -->
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <a class="underline"
-            href="https://github.com/samuel-elijah-edwards/machine-learning-projects/blob/main/Exo-planetML.ipynb" target="_blank">
-            <img src="exoplanet_pic.webp" alt="exo-planet" loading="lazy" class="project-pic" />
-            <h3 class="project-title">Exo-planet Classification</h3>
-          </a>
-          <p class="project-details">
-            In this project, I used a differenet methods of clustering to assign labels to different
-            exo-planets according to their size, and trained a neural network to classify planets according to the assigned labels. 
-            This data set is from NASA's exo-planet database. My goal with this project was to practice my skills with utilzing
-            different clustering methods to explore trends in the data that was not obvious.
-          </p>
-        </div>
-
-              <!-- Business Product Analysis -->
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <a class="underline"
-            href="https://github.com/samuel-elijah-edwards/data-analysis-projects/tree/main/business%20product%20analysis" target="_blank">
-            <img src="business_analysis_pic.png" alt="business product analysis" loading="lazy" class="project-pic" />
-            <h3 class="project-title">Business Product Analysis</h3>
-          </a>
-          <p class="project-details">
-            In this project, obtained a dirty data set from Kaggle that required pre-processing. Afterwards,
-            I exported the cleaned data into a pdf and brought the data to Tableau. Here, it created a dashboard 
-            that provides valuable information about the company's products. The goal of this project was to practice
-            creating dashboards in Tableau as it is a necessary skill in industry.
-          </p>
-        </div>
-
-  </section>
-
-  
-  <!-- AJAX IMPLEMENTATION -->
-  <section class="contact" id="contact">
-    <h2>Get In Touch With Me</h2>
-    <div class="contact-form-container">
-      <div class="contact-form">
-        <form id="my-form" action="https://formspree.io/f/xvojddar" method="POST">
-          <div class="form-control">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
-              required />
-          </div>
-
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
-              required />
-          </div>
-
-
-
-
-          <div class="form-control">
-            <label for="message">Message</label>
-            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
-              class="input-field" required></textarea>
-          </div>
-
+      <div class="project-container project-card">
+        <a
+          class="underline"
+          href="https://github.com/samuel-elijah-edwards/machine-learning-projects/blob/main/Exo-planetML.ipynb"
+          target="_blank"
+        >
+          <img
+            src="assets/exoplanet_pic.webp"
+            alt="exo-planet"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Exo-planet Classification</h3>
+        </a>
+        <p class="project-details">
+          Employed various clustering techniques to categorize exo-planets by
+          size and implemented a neural network for classifying planets based on
+          assigned labels using NASA's exo-planet database. The primary
+          objective was to enhance proficiency in utilizing diverse clustering
+          methods to uncover non-obvious trends within the dataset.
+        </p>
       </div>
-      <button id="my-form-button" type="submit" value="Submit" class="submit-btn">Submit</button>
 
-      <p id="my-form-status"></p>
-      </form>
-    </div>
-    </div>
-  </section>
+      <!-- Business Product Analysis -->
+      <div class="project-container project-card">
+        <a
+          class="underline"
+          href="https://github.com/samuel-elijah-edwards/data-analysis-projects/tree/main/business%20product%20analysis"
+          target="_blank"
+        >
+          <img
+            src="assets/business_analysis_pic.png"
+            alt="business product analysis"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Business Product Analysis</h3>
+        </a>
+        <p class="project-details">
+          Acquired and pre-processed a raw dataset from Kaggle, subsequently
+          transforming and exporting the cleaned data into a PDF format.
+          Utilized Tableau to develop an informative dashboard highlighting
+          crucial insights into the company's products. The project aimed at
+          honing proficiency in creating Tableau dashboards, a vital skill
+          within the industry.
+        </p>
+      </div>
 
+      <!-- NBA Research Paper -->
+      <div class="project-container project-card">
+        <a
+          class="underline"
+          href="https://github.com/samuel-elijah-edwards/nba-research"
+          target="_blank"
+        >
+          <img
+            src="assets/nba-project-cover.webp"
+            alt="NBA Research Project"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">
+            National Basketball Association (NBA) Research Project
+          </h3>
+        </a>
+        <p class="project-details">
+          Collaborated in a team project analyzing NBA census data spanning 2004
+          to 2022, aiming to uncover noteworthy trends. Executed causal
+          inference experiments, unveiling an unexpected correlation between
+          free throw percentages and stadium location.
+        </p>
+      </div>
 
-  <footer>
-    <p>My Socials</p>
+      <!-- Digital Asset Project -->
+      <div class="project-container project-card">
+        <a
+          class="underline"
+          href="https://github.com/samuel-elijah-edwards/data-analysis-projects/tree/main/business%20product%20analysis"
+          target="_blank"
+        >
+          <img
+            src="assets/digital-asset-cover.webp"
+            alt="Digital Asset Analysis"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Digital Asset Analysis</h3>
+        </a>
+        <p class="project-details">
+          Utilized R for data transformation and Logistic Regression to identify
+          pivotal user attributes, achieving a 70% accuracy in predicting
+          product conversion rates. Employed Excel for visualizations, revealing
+          significant insights into user behavior, while a comprehensive MS
+          PowerPoint presentation outlined actionable recommendations for
+          enhancing conversion rates.
+        </p>
+      </div>
 
-    <section class="flex-container">
-      <a class="linkedin" href="https://www.linkedin.com/in/samuel-elijah-edwards/" target="_blank">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
+      <!-- Stock Valuation Prediction Model -->
+      <div class="project-container project-card">
+        <a
+          class="underline"
+          href="https://github.com/samuel-elijah-edwards/stockmarket-model"
+          target="_blank"
+        >
+          <img
+            src="assets/stock-market-cover.jpeg"
+            alt="Stock Valuation Prediction Model"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Stock Valuation Prediction Model</h3>
+        </a>
+        <p class="project-details">
+          Implemented a stock valuation prediction model in Python, leveraging
+          the Google Finance API to retrieve historical market data for publicly
+          traded companies. Engineered a machine learning model that
+          demonstrated a 57% accuracy rate in forecasting stock prices.
+          Significantly improved forecast precision by 10% through the
+          incorporation of news data, enabling the detection of crucial mergers
+          and acquisitions.
+        </p>
+      </div>
 
-      <a class="mail" href="mailto: s_edwards@berkeley.edu" target="_blank">
-        <ion-icon name="mail"></ion-icon>
-      </a>
-
-      <a class="github" href="https://github.com/samuel-elijah-edwards" target="_blank">
-        <ion-icon name="logo-github"></ion-icon>
-      </a>
+      <!-- Customer Sales Segmentation Analysis -->
+      <div class="project-container project-card">
+        <a
+          class="underline"
+          href="https://github.com/samuel-elijah-edwards/customer-segmentation"
+          target="_blank"
+        >
+          <img
+            src="assets/segmentation-cover.png"
+            alt="Customer Sales Segmentation Analysis"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Customer Sales Segmentation Analysis</h3>
+        </a>
+        <p class="project-details">
+          Conducted a comprehensive Customer Sales Segmentation Analysis using
+          Python, SQL, and Excel. Implemented pre-processing, data cleansing,
+          and labeling techniques on transaction and consumer demographic
+          datasets. Utilized Excel to visually represent the correlation between
+          quarterly revenue fluctuations and seasonality in purchasing behavior
+          spanning from 2017 to 2023. Employed clustering methods to identify
+          distinct consumer groups, enabling the differentiation of customer
+          segments based on transaction data.
+        </p>
+      </div>
     </section>
 
-  </footer>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form
+            id="my-form"
+            action="https://formspree.io/f/xvojddar"
+            method="POST"
+          >
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
 
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
 
-  <script src="script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
 
+            <button
+              id="my-form-button"
+              type="submit"
+              value="Submit"
+              class="submit-btn"
+            >
+              Submit
+            </button>
 
-</body>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
 
-<script>
-  var form = document.getElementById("my-form");
+    <!-- Footer Section -->
+    <footer>
+      <p>My Socials</p>
+      <section class="flex-container">
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/samuel-elijah-edwards/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
 
-  async function handleSubmit(event) {
-    event.preventDefault();
-    var status = document.getElementById("my-form-status");
-    var data = new FormData(event.target);
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        status.innerHTML = "Thanks for your submission!";
-        form.reset()
-      } else {
-        response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
-            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-          } else {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          }
+        <a class="mail" href="mailto: s_edwards@berkeley.edu" target="_blank">
+          <ion-icon name="mail"></ion-icon>
+        </a>
+
+        <a
+          class="github"
+          href="https://github.com/samuel-elijah-edwards"
+          target="_blank"
+        >
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </section>
+    </footer>
+
+    <!-- Script Section -->
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Form Submission Script -->
+    <script>
+      var form = document.getElementById("my-form");
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
         })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset();
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, "errors")) {
+                  status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  status.innerHTML =
+                    "Oops! There was a problem submitting your form";
+                }
+              });
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
       }
-    }).catch(error => {
-      status.innerHTML = "Oops! There was a problem submitting your form"
-    });
-  }
-  form.addEventListener("submit", handleSubmit)
-</script>
-
-
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
 </html>
