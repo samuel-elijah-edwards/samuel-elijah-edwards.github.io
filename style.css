@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-  --font-family: "Georgia", sans-serf;
+  --font-family: "Georgia", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -33,13 +33,13 @@ html {
   text-decoration: none;
 }
 
-
-
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
+  margin: 0; /* Remove default body margin */
 }
 
+/* Header */
 header {
   background-color: var(--primary-color);
   color: #fff;
@@ -49,66 +49,38 @@ header {
   position: relative;
 }
 
-
-.bio-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header h1 {
+  margin: 0;
+  font-size: 2rem; /* Adjust font size */
+  text-align: center;
 }
+
+/* Bio Image */
+.bio-image {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.bio-image img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
 
 .bio {
   padding-left: 20px;
   font-size: 20px;
+  max-width: 100%; /* Limit bio text width */
+  margin: 0 auto; /* Center bio text horizontally */
 }
 
-.bio-image {
-  position: relative;
-  display: inline-block;
+h2 {
   text-align: center;
+  margin-bottom: var(--bottom-margin-2);
 }
-
-.bio-image img{
-border-radius: 50%;
-}
-
-.bio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--primary-color);
-  opacity: 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s;
-  border-radius: 50%;
-}
-
-.bio-image:hover .bio-overlay {
-  opacity: 0.8;
-}
-
-.bio-overlay p {
-  color: white;
-  font-size: 18px;
-}
-
-.bio-image:hover .bio-overlay {
-  opacity: 0.8;
-}
-
-
-footer {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 2px;
-  text-align: center;
-
-}
-
 
 nav a {
   color: #fff;
@@ -129,20 +101,31 @@ nav ul li {
   padding-right: 20px;
 }
 
-section {
-  margin: 20px;
-}
 
-section.icons:hover {
-  transform: scale(1.5);
-}
 
-ion-icon {
-  font-size: 30px;
-  color: #fff;
-  padding-left: 5px;
-  padding-right: 5px;
-}
+  section {
+    margin: 10px; /* Adjust margin for better spacing */
+  }
+
+  .contact-form-container {
+    max-width: 100%; /* Make contact form container full width */
+  }
+
+  .contact-form-container textarea {
+    width: 100%; /* Make text area full width */
+  }
+
+  .flex-container {
+    flex-direction: column; /* Stack social icons vertically */
+  }
+
+  ion-icon {
+    font-size: 30px;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
 
 /* Project Section */
 
@@ -212,10 +195,6 @@ ion-icon {
   margin-top: 2rem;
 }
 
-.contact h2 {
-  text-align: center;
-  margin-bottom: var(--bottom-margin-2);
-}
 
 .contact-form-container {
   max-width: 40.75rem;
@@ -272,6 +251,15 @@ ion-icon {
 
 
 /* Socials */
+
+/* Socials */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 2px;
+  text-align: center;
+
+}
 
 .flex-container {
   display: flex;

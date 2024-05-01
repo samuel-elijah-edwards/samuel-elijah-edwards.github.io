@@ -6,12 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="assets/icons8-sigma-16.png" />
     <title>Samuel Elijah Edwards - Personal Website</title>
-
-    <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"
-    ></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
     <script type="text/javascript">
       jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {
@@ -24,7 +19,6 @@
       });
     </script>
   </head>
-
   <body>
     <header>
       <h1>Samuel Elijah Edwards</h1>
@@ -48,11 +42,8 @@
           <img
             alt="Headshot"
             src="assets/Headshot profile pic.png"
-            width="250"
+            width="100%"
           />
-          <div class="bio-overlay">
-            <p>Let's Connect!</p>
-          </div>
         </a>
       </div>
       <div class="bio">
@@ -299,8 +290,8 @@
               <label for="message">Message</label>
               <textarea
                 id="message"
-                cols="60"
-                rows="10"
+                cols="30"
+                rows="5"
                 placeholder="Enter Your Message"
                 name="message"
                 class="input-field"
@@ -316,7 +307,6 @@
             >
               Submit
             </button>
-
             <p id="my-form-status"></p>
           </form>
         </div>
@@ -325,27 +315,22 @@
 
     <!-- Footer Section -->
     <footer>
-      <p>My Socials</p>
-      <section class="flex-container">
+      <section class="socials">
         <a
           class="linkedin"
           href="https://www.linkedin.com/in/samuel-elijah-edwards/"
           target="_blank"
-        >
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-
-        <a class="mail" href="mailto: s_edwards@berkeley.edu" target="_blank">
-          <ion-icon name="mail"></ion-icon>
-        </a>
-
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a class="mail" href="mailto: s_edwards@berkeley.edu" target="_blank"
+          ><ion-icon name="mail"></ion-icon
+        ></a>
         <a
           class="github"
           href="https://github.com/samuel-elijah-edwards"
           target="_blank"
-        >
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
       </section>
     </footer>
 
